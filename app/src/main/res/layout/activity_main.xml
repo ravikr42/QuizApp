@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:text="1. Who has discovered Java Language?"
+            android:text="@string/quiz_ques1"
             android:textSize="16sp" />
 
         <EditText
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:text="2. Which are below inbuilt data type in Java?"
+            android:text="@string/quiz_ques2"
             android:textSize="16sp" />
 
         <CheckBox
@@ -74,7 +74,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:text="3. Java Keywords are written in which case?"
+            android:text="@string/quiz_ques3"
             android:textSize="16sp" />
 
         <RadioGroup
@@ -90,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="24dp"
                 android:text="UpperCase"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
             <RadioButton
                 android:id="@+id/quiz_question_3_radio_option2"
@@ -98,7 +98,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="24dp"
                 android:text="LowerCase"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
         </RadioGroup>
 
         <TextView
@@ -107,7 +107,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:text="4. Which are the values supported by boolean data type?"
+            android:text="@string/quiz_ques4"
             android:textSize="16sp" />
 
         <CheckBox
@@ -152,7 +152,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
-            android:text="5. Which one is not Java Keyword?"
+            android:text="@string/quiz_ques5"
             android:textSize="16sp" />
 
         <RadioGroup
@@ -168,7 +168,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="24dp"
                 android:text="new"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
 
             <RadioButton
                 android:id="@+id/quiz_question_5_radio_option2"
@@ -176,7 +176,7 @@
                 android:layout_height="wrap_content"
                 android:paddingLeft="24dp"
                 android:text="create"
-                android:textSize="16dp" />
+                android:textSize="16sp" />
         </RadioGroup>
 
         <Button

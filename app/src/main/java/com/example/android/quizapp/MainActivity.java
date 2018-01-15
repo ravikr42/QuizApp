@@ -30,9 +30,17 @@ public class MainActivity extends AppCompatActivity {
      */
     public void submitAnswer(View view) {
         Context context = getApplicationContext();
-        CharSequence text = "Your Total Score: " + scoreBuilder() + "/5";
+
+        CharSequence message = "";
+        int score = scoreBuilder();
+
+        if (score >= 3) {
+            message = "Passed: Your Total Score is " + score + "/5";
+        } else {
+            message = "Failed: Your Total Score is " + score + "/5";
+        }
         int duration = Toast.LENGTH_SHORT;
-        Toast toast = Toast.makeText(context, text, duration);
+        Toast toast = Toast.makeText(context, message, duration);
         toast.show();
     }
 
@@ -43,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
      */
     public String getQues1Response() {
         EditText text = (EditText) findViewById(R.id.name_question_1_answerBox);
-        String answer = text.getText().toString();
+        String answer = text.getText().toString().trim();
         return answer;
     }
 
@@ -84,14 +92,13 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method will return response of question 2
      *
-     * @return answer
+     * @return isBtnChecked
      */
-    public String getQuestion3Response() {
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.quiz_question_3_radioBox);
-        int selectId = radioGroup.getCheckedRadioButtonId();
-        RadioButton button = (RadioButton) findViewById(selectId);
-        String answer = button.getText().toString();
-        return answer;
+    public boolean getQuestion3Response() {
+       RadioButton button = (RadioButton) findViewById(R.id.quiz_question_3_radio_option2);
+       boolean isBtnChecked = button.isChecked();
+       return  isBtnChecked;
+
     }
 
     /**
@@ -145,14 +152,11 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method will return response of question 5
      *
-     * @return answer
+     * @return btn.isChecked()
      */
-    public String getQuestion5Response() {
-        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.quiz_question_5_radioBox);
-        int selectId = radioGroup.getCheckedRadioButtonId();
-        RadioButton button = (RadioButton) findViewById(selectId);
-        String answer = button.getText().toString();
-        return answer;
+    public boolean getQuestion5Response() {
+       RadioButton btn = (RadioButton) findViewById(R.id.quiz_question_5_radio_option2);
+       return btn.isChecked();
     }
 
 
@@ -172,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
             markesObtained++;
         }
 
-        if (getQuestion3Response().equalsIgnoreCase("LowerCase")) {
+        if (getQuestion3Response()) {
             markesObtained++;
         }
 
@@ -180,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
             markesObtained++;
         }
 
-        if (getQuestion5Response().equalsIgnoreCase("create")) {
+        if (getQuestion5Response()) {
             markesObtained++;
         }
         return markesObtained;

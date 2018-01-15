@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Java Quiz App</string>
+    <string name="quiz_ques1">1. Who has discovered Java Language?</string>
+    <string name="quiz_ques2">2. Which are below inbuilt data type in Java?</string>
+    <string name="quiz_ques3">3. Java Keywords are written in which case?</string>
+    <string name="quiz_ques4">4. Which are the values supported by boolean data type?</string>
+    <string name="quiz_ques5">5. Which one is not Java Keyword?</string>
+
 </resources>
