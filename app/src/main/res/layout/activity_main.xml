@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.quizapp.MainActivity">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/quiz_question_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="1. Who has discovered Java Language?"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/name_question_1_answerBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="name"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:id="@+id/quiz_question_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="2. Which are below inbuilt data type in Java?"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/quiz_question_2_chbox_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="24dp"
+            android:text="int"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/quiz_question_2_chbox_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="24dp"
+            android:text="double"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/quiz_question_2_chbox_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="24dp"
+            android:text="String"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/quiz_question_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="3. Java Keywords are written in which case?"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/quiz_question_3_radioBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/quiz_question_3_radio_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="UpperCase"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/quiz_question_3_radio_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="LowerCase"
+                android:textSize="16dp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/quiz_question_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="4. Which are the values supported by boolean data type?"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/quiz_question_4_chbox_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="24dp"
+            android:text="true"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/quiz_question_4_chbox_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="24dp"
+            android:text="on"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/quiz_question_4_chbox_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="24dp"
+            android:text="off"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/quiz_question_4_chbox_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:paddingLeft="24dp"
+            android:text="false"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/quiz_question_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="5. Which one is not Java Keyword?"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:id="@+id/quiz_question_5_radioBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/quiz_question_5_radio_option1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="new"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/quiz_question_5_radio_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="24dp"
+                android:text="create"
+                android:textSize="16dp" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:onClick="submitAnswer"
+            android:text="Submit Answer" />
+
+
+    </LinearLayout>
+
+</ScrollView>
